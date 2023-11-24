@@ -15,8 +15,7 @@ public class GrocerySettlementHelper {
         return orderSummary;
     }
 
-    public static OrderSummary createGroceryOrderWithoutDiscount(int sellerId,boolean isGoDelivery,int lineQuantity, boolean isTestOrder) {
-        OrderCreateRequestModel orderRequestModel = createOrderWithoutDiscountRequestModel(lineQuantity, isGoDelivery);
+    public static OrderSummary createGroceryOrderWithDiscount(int sellerId,boolean isGoDelivery,int lineQuantity, boolean isTestOrder) {
         return createGroceryOrder(isGoDelivery,sellerId,lineQuantity,isTestOrder);
     }
 
